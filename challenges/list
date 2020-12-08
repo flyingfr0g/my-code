@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+##this is the lists and dictionary challenge
+
+##the first list is dog names
+
+dogs = ("Edgar", "Luna", "Otavio")
+
+##the second list is cat names
+
+cats = ("Bene", "Luigi", "Chickie")
+
+##the next list will include both the dogs and cats names
+
+both = [dogs + cats]
+
+#the next line will print the name of the first dog name
+
+print( both[0][0])
+
+##the next line will print the name of the second cat name
+
+print( both[0][4])
+
+##the next line will create a dictionary containing the first dogs name and second cats name
+
+names = {'first_dog': 'Edgar', 'second_dog': 'Luna', 'third_dog': 'Otavio', 'first_cat': 'Bene', 'second_cat': 'Luigi', 'third_cat': 'Chikkie'}
+
+
+##the next line will print the dictionary
+
+print(names)
+
+##the next line will print the name if the first dog and second cat using the dictionary
+
+print( names.get('first_dog') )
+print( names.get('second_cat') )
+
+
