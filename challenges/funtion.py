@@ -14,7 +14,7 @@ hello()  #this calls our newly created funtion.
 
 #next we will ask the user for a number
 
-number = input("what is your favorite number?  ")
+number = int(input("what is your favorite number?  "))
 
 #next create a function that takes that number and multiplies it by 11
 
