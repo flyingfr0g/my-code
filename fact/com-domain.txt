@@ -1,0 +1,3 @@
+lookup.supershoes.example.com
+lookup.supershoes.example.com
+lookup.supershoes.example.com
