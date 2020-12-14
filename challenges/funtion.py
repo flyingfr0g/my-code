@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#this is an exapmle of creating functions
 
 #first we prompt the user for an input
 

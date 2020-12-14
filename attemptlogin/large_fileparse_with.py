@@ -18,7 +18,7 @@ with open("/home/student/mycode/attemptlogin/keystone.common.wsgi") as kfile:
         elif not "- - - - -] Authorization failed" in line:
             loginsuccess += 1 #this add 1 to the successfull logins counter
             print(line)
-            # You had it say loginsuccess =+ 1, which is assigning that value to 1, every single time this is true. Even though it assigned it 51 times, it still was always assigned to 1.
+            # You had it say loginsuccess =+ 1, which is assigning that value to 1, every single time this is true. Even though it assigned it 51 times, it still was always assigned to 1. ok yeah i see what happened. i had the   = and + switched which made it so that it always equaled 1.
 print("The number of failed log in attempts is: ", loginfail)
 
 print("The number of successfull login attempts is: ", loginsuccess)
