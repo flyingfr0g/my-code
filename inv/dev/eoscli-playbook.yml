@@ -1,0 +1,24 @@
+---
+- name: using EOS specific module to run commands
+  hosts: arista_switches
+  gather_facts: false
+  connection: network_cli    #required for ansible to use CLI over ssh
+  become: yes                #run with privledge
+  become_mothod: enable      #use in place of sudo
+
+  vars:
+          ansible_ssh_pass: alta3
+
+  tasks:
+          -name: run multiple commands on remote devices
+           arista.eos.eos_command:
+                   commands:
+                    - show version
+                    - show interfaces
+           register: results    #variable to register with JSON response to eos_command module
+                                #variable of both cammands are stored in this variable
+
+                           
+          -name: take a peek as to what is inside "results"
+           debug:
+                   var: results
